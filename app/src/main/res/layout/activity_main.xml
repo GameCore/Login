@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@drawable/wallhaven">
+
+    <TextView
+        android:textColor="#FFF"
+        android:textSize="30sp"
+        android:paddingBottom="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:backgroundTintMode="add"
+        android:layout_gravity="center"/>
+
+    <EditText
+
+        android:textColor="#FFF"
+        android:padding="25dp"
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="User"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:textColor="#FFF"
+        android:padding="25dp"
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:imeOptions="actionSend"
+        android:inputType="textPassword"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Conexion"
+        android:id="@+id/conexion"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:padding="20dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Query"
+        android:id="@+id/query"
+        android:textColor="#FFF"
+        android:layout_gravity="center"
+        android:padding="20dp"/>
+
+    <Button
+        android:id="@+id/enviar"
+        android:onClick="enviar"
+        android:layout_marginTop="22dp"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/send" />
+
+
+
+</LinearLayout>
